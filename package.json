@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "cypress": "^14.3.2",
+    "cypress-mailslurp": "^1.10.0"
+  },
+  "scripts": {
+    "test": "npx cypress open",
+    "test:headless": "npx cypress run"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}

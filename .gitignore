@@ -1,0 +1,7 @@
+.env
+      
+        cypress.config.js
+        cypress/
+        node_modules/
+        package-lock.json
+        package.json
