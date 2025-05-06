@@ -58,13 +58,13 @@ describe('Inscription sur Cypress puis validation depuis la boîte mail', () => 
           //Une fois sur la page de confirmation, je remplis les champs pour créer mon compte
           cy.signup();
           cy.contains('Billing & Usage').click();
-          //je vais sur la page de billing pour récuperer le nombre de jours restants avant la fin de mon essai gratuit
+          //je vais sur la page de billing pour récuperer la date limite avant la fin de mon essai gratuit
           //bonus: je récupère la date avec une simulation de survol de la souris sur l'élément
           cy.get('[data-cy="usage-renew-info"]').trigger('mouseover') 
           cy.get('.rc-tooltip-inner > span').should('be.visible')
             .invoke('text')
             .then((date) => {
-              //je stocke le nombre de jours restants dans un fichier json
+              //je stocke la date limite dans un fichier json
               cy.writeFile('cypress/fixtures/dayleft.json', { date });
               cy.log('Day left: ' + date);
             });

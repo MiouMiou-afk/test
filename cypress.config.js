@@ -11,7 +11,7 @@ module.exports = defineConfig({
     
     baseUrl: "https://www.cypress.io",
     env: {
-      API_KEY: "a03f07046b273170729a3b4538359b8601028c79eae4de6bf6b87142e18a029e"
+      API_KEY: "86f96d5d3a8fe2e5814a99f320cf3a428320241ab9d946cd74efb1c21edc231f"
     }
   }
 });
