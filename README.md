@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 # Inscription et validation sur Cypress.io : test
+=======
+# Inscript et validation sur Cypress.io
+>>>>>>> parent of f7da70b (commit)
 
 Ce projet utilise Cypress pour réaliser des tests end-to-end et MailSlurp pour la gestion d'adresses email temporaires.
 
