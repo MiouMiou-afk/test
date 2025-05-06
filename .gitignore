@@ -1,7 +1,9 @@
+# Node modules
+node_modules/
+
+# Cypress output
+cypress/videos/
+cypress/screenshots/
+
+# Environment variables
 .env
-      
-        cypress.config.js
-        cypress/
-        node_modules/
-        package-lock.json
-        package.json

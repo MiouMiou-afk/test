@@ -1,5 +1,5 @@
 
-# Inscript et validation sur Cypress.io
+# Inscription et validation sur Cypress.io
 
 Ce projet utilise Cypress pour réaliser des tests end-to-end et MailSlurp pour la gestion d'adresses email temporaires.
 
