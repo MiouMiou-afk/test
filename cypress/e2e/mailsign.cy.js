@@ -64,9 +64,19 @@ describe('Inscription sur Cypress puis validation depuis la boîte mail', () => 
           cy.get('.rc-tooltip-inner > span').should('be.visible')
             .invoke('text')
             .then((date) => {
+              //je parse la date pour la formater
+              const parseDate = new Date(date);
+              const formatted = parseDate.toLocaleString('fr-FR', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+              });
+
               //je stocke la date limite dans un fichier json
-              cy.writeFile('cypress/fixtures/dayleft.json', { date });
-              cy.log('Day left: ' + date);
+              cy.writeFile('cypress/fixtures/dayleft.json', { formatted });
+              cy.log('Day left: ' + formatted);
             });
         });
 
