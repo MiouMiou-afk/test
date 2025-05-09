@@ -75,7 +75,7 @@ describe('Inscription sur Cypress puis validation depuis la boîte mail', () => 
               });
 
               //je stocke la date limite dans un fichier json
-              cy.writeFile('cypress/fixtures/dayleft.json', { formatted });
+              cy.writeFile('cypress/fixtures/dayleft.json', { date: `Date limite d'essai gratuit : ${formatted} ` });
               cy.log('Day left: ' + formatted);
             });
         });
